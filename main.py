@@ -9,9 +9,8 @@ def greet(name):
 
 
 def add(a, b):
-    a=100
-    if not isinstance(a, (int, float)) or not isinstance(b, (int, float)):
-            return "Loi: a va b phai la so"
+    a = float(a)  # Dong 10 -> Tinh se sua dong nay (vi du them kiem tra kieu du lieu)
+    b = float(b)
     # Dong 11 -> Tinh se sua dong nay (vi du them kiem tra kieu du lieu)
     return a + b
 
@@ -31,7 +30,7 @@ def multiply(a, b):
 
 
 def divide(a, b):
-    # Dong 26
+    
     if b == 0:
         return "Khong the chia cho 0"
     return a / b
@@ -40,7 +39,7 @@ def divide(a, b):
 def main():
     print(greet("Nhom Demo-Git-Team"))
     print("2 + 3 =", add(2, 3))
-    print("5 - 2 =", subtract(5, 2))
+    print("1 - 2 =", subtract(1, 2))
     print("4 * 6 =", multiply(4, 6))
     print("10 / 2 =", divide(10, 2))
 
