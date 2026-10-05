@@ -10,6 +10,8 @@ def greet(name):
 
 def add(a, b):
     a=100
+    if not isinstance(a, (int, float)) or not isinstance(b, (int, float)):
+            return "Loi: a va b phai la so"
     # Dong 11 -> Tinh se sua dong nay (vi du them kiem tra kieu du lieu)
     return a + b
 
