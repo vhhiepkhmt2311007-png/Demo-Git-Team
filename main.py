@@ -15,7 +15,8 @@ def add(a, b):
 
 
 def subtract(a, b):
-    # Dong 16
+    if a < b:
+        return "Loi: a phai lon hon hoac bang b"
     return a - b
 
 
