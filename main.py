@@ -19,8 +19,11 @@ def subtract(a, b):
 
 
 def multiply(a, b):
-    # Dong 21 -> Nhut Anh se sua dong nay (vi du them xu ly loi)
-    return a * b
+    try:
+        return a * b
+    except TypeError:
+        return "Loi: a va b phai la so"
+
 
 
 def divide(a, b):
