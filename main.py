@@ -17,11 +17,8 @@ def add(a, b):
 
 
 def subtract(a, b):
-<<<<<<< HEAD
-=======
     if a < b:
         return "Loi: a phai lon hon hoac bang b"
->>>>>>> main
     return a - b
 
 
