@@ -15,8 +15,8 @@ def add(a, b):
 
 
 def subtract(a, b):
-    if not isinstance(a, (int, float)) or not isinstance(b, (int, float)):
-        return "Loi: a va b phai la so"
+    if a < b:
+        return "Loi: a phai lon hon hoac bang b"
     return a - b
 
 
